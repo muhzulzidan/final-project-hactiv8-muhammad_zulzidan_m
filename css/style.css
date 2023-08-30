@@ -1,3 +1,74 @@
-.bg-grey {
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Handjet:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+    font-family: 'Handjet', cursive;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.navbar-brand {
+    font-family: 'Black Ops One', cursive;
+}
+.home-image {
+    width: 100%;
+}
+#home {
+    position: relative;
+}
+.home-text {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    text-align: center;
+    color: white;
+}
+.home-text h1 {
+    font-family: 'Black Ops One', cursive;
+    font-size: 50px;
+}
+.home-text p {
+    font-size: 30px;
+}
+#about {
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+#about h1 {
+    font-family: 'Black Ops One', cursive;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.bg-black {
+    background-color: black;
+}
+#experiences {
+    padding: 40px;
     background-color: gray;
+    text-align: center;
+}
+#experiences h1 {
+    font-family: 'Black Ops One', cursive;
+    text-decoration: underline;
+    margin-bottom: 40px;
+    
+}
+.experiences-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.experiences-card {
+    flex: 1;
+    border-style: solid;
+    border-radius: 16px;
+}
+.experiences-card img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 20px;
 }
