@@ -1,74 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Handjet:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Reset some default browser styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: 'Handjet', cursive;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
+
+/* Navbar styles */
 .navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
+    background-color: #333;
+    color: #fff;
 }
+
 .navbar-brand {
-    font-family: 'Black Ops One', cursive;
+    font-size: 24px;
+    font-weight: bold;
 }
-.home-image {
-    width: 100%;
+
+.nav-link {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
-#home {
-    position: relative;
+
+.nav-link:hover {
+    color: #ff5733; /* Highlight color on hover */
 }
-.home-text {
-    position: absolute;
-    top: 40%;
-    left: 35%;
-    text-align: center;
-    color: white;
+
+/* Section styles */
+section {
+    padding: 40px 0;
 }
-.home-text h1 {
-    font-family: 'Black Ops One', cursive;
-    font-size: 50px;
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.home-text p {
-    font-size: 30px;
-}
-#about {
-    color: white;
-    text-align: center;
-    padding: 40px;
-}
-#about h1 {
-    font-family: 'Black Ops One', cursive;
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
     margin-bottom: 20px;
-    text-decoration: underline;
 }
-.bg-black {
-    background-color: black;
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
-#experiences {
-    padding: 40px;
-    background-color: gray;
+
+p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+/* Home section */
+.home-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.home-text {
     text-align: center;
 }
-#experiences h1 {
-    font-family: 'Black Ops One', cursive;
-    text-decoration: underline;
-    margin-bottom: 40px;
-    
+
+.home-text h1 {
+    font-size: 36px;
 }
+
+.home-text p {
+    font-size: 18px;
+}
+
+/* Experience cards */
 .experiences-container {
     display: flex;
-    flex-direction: row;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
+
 .experiences-card {
-    flex: 1;
-    border-style: solid;
-    border-radius: 16px;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .experiences-card img {
-    width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
+
+/* Footer */
+.bg-dark {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Add more styles as needed */
+
